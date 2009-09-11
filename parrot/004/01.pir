@@ -12,8 +12,8 @@ OUTMOST:
     goto FINISH
 OUTER_LOOP:
     if $I1 < 999 goto INNER_LOOP
-    $I1 = 99
     inc $I0
+    $I1 = $I0
     goto OUTMOST
 INNER_LOOP:
     inc $I1
